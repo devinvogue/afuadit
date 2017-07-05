@@ -1,0 +1,203 @@
+/**
+Author: devinvogue
+Date: 06/06/17
+Purpose:
+**/
+body
+{
+	padding: 0px;
+	margin: 0px;
+	/*background-color: red;*/
+}
+
+nav,header,section,footer
+{
+
+	width: 100%;
+	float: left;
+
+}
+
+nav
+{
+	height: 70px;
+	background-color: #FFF;
+	z-index: 1;
+	position: fixed;
+
+}
+
+nav #navigation
+{
+	float: right;
+
+
+}
+
+nav #navigation ul
+{
+	display: inline-block;
+}
+nav #navigation ul li
+{
+	display: inline;
+}
+
+nav #navigation ul li a
+{
+color: black;
+margin: 5px 10px;
+
+}
+nav div
+{
+	float:left;
+}
+
+nav div ul li a
+
+{
+	
+	text-decoration: none;
+}
+
+#navigation ul li a:link
+{
+  text-decoration: none;
+}
+
+
+#navigation ul li a:hover
+{
+  text-decoration: none;
+  color:blue;
+  font-weight: bold;
+}
+
+#navigation ul li a:active
+{
+  text-decoration: none;
+  
+}
+
+
+header 
+{
+	height: auto;
+	padding: 20px 20px;
+	margin:5% 0 0 0;
+
+	
+}
+header div
+{
+	text-align:center;
+}
+header div img
+{
+	
+	width:85%;
+	/*padding-left: 30px;*/
+	/*padding-right: 30px;*/
+
+
+	/*height:600px;*/
+}
+#coverpic
+{
+	color:ash;
+
+}
+
+#logo img
+{
+	
+	height:80px;
+	margin-left: 20px;
+}
+
+
+section  #left, section #middle, section #right
+{
+   width: 33%;
+   height: auto;
+   border: 1px solid #CCC;
+   float: left;
+
+}
+
+
+section div li
+{
+ display: inline;
+}
+/*footer #call_us, footer #find_us, footer #copyright, footer #social_media 
+{
+ width:24.8%;
+ float:left;
+ border: 1px solid #CCC;
+}*/
+footer
+{
+	height: auto;
+	background-color: #232323;
+}
+
+footer #social_media ul
+{
+	display: inline-block;
+}
+footer #social_media ul li
+{
+	list-style: none;
+	text-decoration: none;
+	display: inline;
+}
+footer #social_media
+{
+	float: right;
+}
+
+
+{
+	position: relative;
+}
+
+.slideshow
+{
+	position: relative;
+}
+
+.slideshow figure
+{
+	position: absolute;
+	width:100%;
+	margin: 0;
+	opacity: 0;
+}
+
+#slide1
+{
+	animation:xfade 10s 0s infinite;
+}
+
+#slide2
+{
+	animation:xfade 10s 2.5s infinite;
+}
+#slide3
+{
+	animation:xfade 10s 5s infinite;
+}
+#slide4
+{
+	animation:xfade 10s 7.5s infinite;
+}
+
+%keyframes xfade
+{
+	0% {opacity: 0;}
+	5% {opacity: 1;}
+	10% {opacity: 1;}
+	30% {opacity: 0;}
+}
