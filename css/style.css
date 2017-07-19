@@ -4,10 +4,9 @@ body {
   margin: 0;
 }
 
-
-
-
-
+.navbar{
+  margin-bottom: 0;
+}
 
 .tales {
   width: 400%;
