@@ -1,0 +1,231 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+
+
+.tales {
+  width: 400%;
+}
+.carousel-inner{
+  width:100%;
+  
+}
+.row{
+  width: 100%;
+  border-style: solid black;
+
+}
+.middle{
+  height: 300%;
+}
+
+.push{
+  margin-left:10%;
+}
+
+.push2
+{
+  margin-left: 15%;
+}
+
+.circle-image{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    display:block;
+    background-position-y:25%;
+    
+}
+
+.carousel-caption
+{
+  position: absolute;
+  top: 300px;
+  border-bottom-style:solid;
+  color: #FFFFFF;
+  font-size: 35px;
+  font-style:italic;
+  font-family:SketchFlow Print;
+}
+
+
+
+.row img
+{
+  /*box-shadow: 50px; */
+  border-left-color: solid;
+   /*border-radius: 5px;*/
+}
+
+#secbox
+{
+  padding:10px;
+  
+}
+
+#fourbox
+{
+padding:10px;
+
+}
+
+
+#sixbox
+{
+ padding:10px;
+
+}
+
+
+
+
+
+
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 100px;
+  background-color: #abcdef;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 100%;
+  padding: 0 15px;
+  height: auto;
+  padding-top: 40px;
+  
+
+  
+}
+#grey
+{
+  background-color: #e7e7e7;
+  width: 100%;
+}
+
+#white
+{
+   background-color:#FFFFFF;
+}
+
+#join_us
+{
+
+  height: 350px;
+  width:50%;
+  background-color: orange;
+
+
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#space
+{
+  padding-top: 100px;
+  margin:0;
+}
+
+
+.footer
+{
+  height: 200px;
+  width: 100%;
+  background-color:#FFFFFF ;
+  position: relative;
+  padding: 10px;
+  bottom: 0;
+  padding-top: 300px;
+}
+i
+{
+  
+  width: 20%;
+  height: 100px;
+}
+
+.tiles{
+  padding:0;
+  margin: 0;
+  height: 38vh;
+  background: #38394e;
+  color: #FFFFFF;
+  font-family: Segoe Script;
+  font-size: 15px;
+}
+
+.tiles img{
+  width: 100%;
+  height: 100%;
+}
+
+.grid_main{
+  margin:0;
+}
+
+
+.updiv
+{
+    background-color: #333;
+    height: 29vh;
+    text-align: center;
+}
+
+.downdiv
+{
+  
+ background-color:#38394e;
+ height:10vh;
+  text-align: center;
+}
+
+
+
+#mblock
+{
+ 
+  height: 26vh;
+  width: 100%;
+  background-color: orange;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top:20px; 
+  
+}
+
+
+#hq
+{
+  margin-right: 70px;
+  
+  border-style: 2px solid black;
+ 
+}
+
+#postal
+{
+  background-color: orange;
+}
