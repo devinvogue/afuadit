@@ -3,10 +3,13 @@ body {
   height: 100%;
   margin: 0;
 }
-
 .navbar{
   margin-bottom: 0;
 }
+
+
+
+
 
 .tales {
   width: 400%;
@@ -17,7 +20,7 @@ body {
 }
 .row{
   width: 100%;
-  border-style: solid black;
+  border-style: 5px solid black;
 
 }
 .middle{
@@ -157,7 +160,7 @@ padding:10px;
   position: relative;
   padding: 10px;
   bottom: 0;
-  padding-top: 300px;
+  /*padding-top: 300px;*/
 }
 i
 {
@@ -172,8 +175,9 @@ i
   height: 38vh;
   background: #38394e;
   color: #FFFFFF;
-  font-family: Segoe Script;
+  font-family: Arial;
   font-size: 15px;
+  border: 1px solid #FFF;
 }
 
 .tiles img{
@@ -208,23 +212,235 @@ i
  
   height: 26vh;
   width: 100%;
-  background-color: orange;
+  background-color:#38394e;
   color: #FFFFFF;
   text-align: center;
   padding-top:20px; 
   
 }
+#mblock1
+{
+  height: 36vh;
+  width: 100%;
+  background-image: url('../img/membership.png');
+  color: #FFFFFF;
+  text-align: center;
+  padding-top:50px; 
+}
 
+/*header
+{
+  padding-bottom: 300px;
+}*/
 
 #hq
 {
-  margin-right: 70px;
-  
-  border-style: 2px solid black;
+  text-align: center;
+  text-decoration: none;
+ padding-top: 100px;
+  background-color:#e7e7e7;
+ height: 58vh;
  
 }
 
 #postal
 {
-  background-color: orange;
+  background-color:#e7e7e7;
+   height: 58vh;
+    padding-top: 100px;
+   text-align: center;
+  text-decoration: none;
 }
+
+
+/****
+   FORMS 
+***/
+form ul li{
+  list-style: none; /*removes the bullet sign*/
+  margin: 10px 0;   /*creates spaces in-between the input*/ 
+}
+
+/*Form button*/
+button{
+  width: 185px;
+  height: 40px;
+  background-color:#e7e7e7;
+  color:#FFF;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;  /*Signifies that the button can be clicked*/
+}
+
+input{
+  width: 365px;
+  height: 40px;
+  font-size: 1.05em;
+  border:1px solid #ccc;
+}
+
+textarea{
+
+  width: 365px;
+  height: 100px;
+  font-size: 1.05em;
+}
+
+button,input,textarea{
+  /* border-radius: 5px;*/   /*curves the corners*/
+  box-shadow: 1px 0px 1px #ccc;
+   
+   padding: 2px 10px;
+}
+
+
+/****
+
+CONTACT FORM
+*****/
+#contact_form{
+  width: 100%;
+  padding: 20px 0;
+  float: left;
+  text-align: center;
+  background-color:#38394e; 
+  /*;*/
+}
+
+#contact_form > form{
+    width: 30%;
+    margin: 10px 33%;
+}
+
+
+.img-wrapper
+{
+  position: relative;
+}
+
+.img-overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.img-overlay:before
+{
+  content: '';
+  display: block;
+  height: 50%;
+}
+
+
+.icons
+{
+  padding-top:50px;
+}
+
+.icons ul li
+{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.menu ul li 
+{
+ margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+.btt p span
+{
+  
+  color: #FFFFFF;
+  font-size:50px;
+  margin-right: 0px;
+}
+
+
+.trans
+{
+  height:300px;
+  background-color: lightblue;
+  width: 50%;
+  float: left;
+}
+
+.trans span
+{
+  color: #FFFFFF;
+  font-size:50px;
+  float: right;
+  padding-top: 120px;
+}
+
+.mbrship 
+{
+  padding-left: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.mbrship button
+
+{
+  width: 285px;
+  height: 60px;
+  background-color:#e7e7e7;
+  color:#FFF;
+  border: 2px solid grey;
+  font-size: 1.3em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
