@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>DONATE ICT EQUIPMENTS</title>
+
+        <!--Meta Tags-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--CSS Links-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" type="text/css" href="css/donateform.css">
+
+<body>
+
+<div class="w3-container">
+  
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">DONATE ICT EQUIPMENTS</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-top-right">&times;</span>
+        <p>
+          <h2 style="text-align:center">DONATION FORM</h2>
+<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12"></div>
+
+ <div class="container">
+  <form action="/action_page.php">
+<div>
+    <h3>Type of ICT Equipment GNAIT needs</h3>
+    <p>
+    <ul>
+        <li>Computers, Laptops, Projectors, Servers, Routers</li> 
+        <li>Electronic Whiteboards, Smartboards, Pendrives/Memory Sticks, Modems, Light Pens</li> 
+        <li>Digital Pens, Digital Monitors, Monitors, System Units, Repeaters</li>
+        <li>Printers, Scanners, Photocopier Machines, OMR Scanners, Digital TVs</li>
+        <li>Hard Drives, Computer Mouse, Keyboards, and any other ICT equipment</li>
+    </ul> 
+    </p>
+</div>
+
+
+    <label for="name/company" class="form-control">Name/Company</label><br>
+    <input type="text" id="name/company" name="name/company" placeholder="Full name of person or company donating the ICT equipment">
+    <br>
+
+    <label for="address" class="form-control">Address</label><br>
+    <input type="text" id="address" name="address" placeholder="Postal address of company or person donating the ICT equipment">
+    <br>
+
+    <label for="contact" class="form-control">Contact</label><br>
+    <input type="text" id="contact" name="contact" placeholder="Contact number of donor e.g. tel, mobile phone, etc">
+    <br>
+
+    <label for="email" class="form-control">E-mail</label><br>
+    <input type="email" id="email" name="email" placeholder="E-mail address of the company or person donating the ICT equipment">
+    <br>
+
+    <label for="country" class="form-control">Country</label><br>
+    <input type="text" id="country" name="country" placeholder="Name of country of donor ">
+    <br>
+
+    <label for="contact" class="form-control">Type of ICT Equipment</label><br>
+    <input type="text" id="equipment" name="equipment" placeholder="Type the names of the ICT equipment you wish to donate">
+    <br>
+
+    <label for="contact" class="form-control">Quantity</label><br>
+    <input type="text" id="quantity" name="quantity" placeholder="Type the total number of ICT equipment e.g. 20 desktop computers, 5 electronic whiteboards">
+    <br>
+
+    <label for="project-type">Project type</label><br>
+<select class="form-control" id="project-type" placeholder="Select project type you wish to support">
+  <option></option>
+  <option>Establishment of ICT center for research project</option>
+  <option>Establishment of computer labs for deprived schools</option>
+  <option>Establishment of computer training school</option>
+  <option>Establishment of internet cafes for deprived communities</option>
+  <option>Support GNAIT educational workshops</option>
+  <option>Support GNAIT members (donate to members) </option>
+</select>
+<br>
+
+<p><h4>SHIPPING IS OPTIONAL</h4></p><br>
+
+Do you want to ship the ICT equipments to GNAIT <input type="radio" name="optional" value="yes"> YES <input type="radio" name="optional" value="no"> NO <br>
+<br>
+
+<div class="row">
+  <label for="shipping company">Shipping company</label>
+  <input type="text" name="company" placeholder="Provide name of shipping company">
+  <br>
+
+  <label for="shipping code">Shipping code</label>
+  <input type="code" name="code" placeholder="">
+</div>
+<br>
+
+  <label for="contact">Contact of shipping company or Agent  (optional)</label>
+  <input type="text" name="text" placeholder="Contact of shipping company or Agent GNAIT will contact">
+  <br>
+
+  <label for="shipping code">Shipping Details</label><br>
+  <input type="text" name="details" placeholder="Upload shipping documentations or details">
+  
+
+<br>
+    <label for="suggestion">Suggestion</label><br>
+    <textarea id="suggestion" name="suggestion" placeholder="" style="height:150px"></textarea><br>
+    <br>
+
+    <input type="submit" onclick="alert('Thank You For Your Donation')" value="Submit">
+    <input type="reset">
+
+
+  </form>
+</div> 
+
+
+
+
+
+
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+            
+</body>
+</html>
