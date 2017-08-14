@@ -1,275 +1,502 @@
+<!DOCTYPE html>
+<!-- ==============================
 <!--
-Author: Ewurafua@devinvogue
+Author: devinvogue
 Date: 06/06/17
 Purpose:
--->
-<!DOCTYPE html>
-<html>
-<head>
+--
+================================== -->
+<html lang="en" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>GNAIT</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
 
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ICT TEACHER ASSOCIATION</title>
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="css/tinycarousel.css" type="text/css" media="screen"/>
-<!--     <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
- -->
-   
-
-
-  
-    
-
-</head>
-<body >
-   <main>
-     <!--nav is the navigation-->
-     <header>
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <img src="img/GNAIT.png" class="img-responsive img-circle" width="80px" height="80px">
-          </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">HOME</a></li>
-              <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  
-                  <li><a href="aboutUs.html">About us</a></li>
-                  <li><a href="OurAims.html">Our aims</a></li>
-                  <li><a href="OurGoals.html">Our goals</a></li>
-                  <li><a href="OurObjectives.html">Our objectives</a></li>
-                  <li><a href="Membership.html">Membership</a></li>
-                </ul>
-                </li>
-              <li><a href="events.html">EVENTS/GALLERY</a></li>
-              <li><a href="donate.html">DONATE</a></li>
-              
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-     </header>
-<!--      #######################################################################################################################################
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/animate.css" rel="stylesheet">
+        
+<!-- <link rel="stylesheet" href="css/theme.css">
  -->
 
-        <!--carousel-->
-     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
 
-  <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="img/dum.jpg">
-              <div class="carousel-caption">
-                " When women and girls are given the resources in ICT to create opportunity for themselves and their communities, everyone benefits"
-              </div>
-          </div>
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
 
-          <div class="item">
-            <img src="img/dummy9.jpg">
-              <div class="carousel-caption">
-                "Computing enables you to make a positive difference in the world."
-              </div>
-          </div>
-    
-          <div class="item">
-            <img src="img/dummy81.png">
-              <div class="carousel-caption">
-                "Awaken your inner sleeping giant and move mountains of global change through Information and Communication Technology.""
-              </div>
-          </div>
-        </div>
+        <!-- THEME STYLES -->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
 
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
 
-      <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+    <!-- BODY -->
+    <body id="body" data-spy="scroll" data-target=".header">
 
-     <!--Carousel End-->
-     <!-- ##################################################################################################################################### -->
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
 
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="#body">
+                                <!-- <img class="logo-img logo-img-main" src="img/GNAIT.png" class="img-responsive img-circle" style="width:80px; height:80px"> -->
+                                <span class="logo-img logo-img-main" style="font-family:AR ESSENCE; font-size:38px">GNAIT</span>
+                                <img class="logo-img logo-img-active" src="img/GNAIT.png"  class="img-responsive img-circle" style="width:80px; height:80px">
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
 
-      <div class="container">
-        <div class="row_middle" align="center" >
-          <div>
-            <div id ="white">
-              <h1 style="padding-bottom:40px">WHO WE ARE</h1>
-              <p class="text-justify" style="font-size:20px; font-family:Arial; padding-bottom:40px; margin-left:60px; margin-right:60px ">
-                  The Ghana National Association of ICT Teachers (GNAIT) is a registered Non-governmental organization consisting of ICT Teachers and IT Professionals from both public and private schools and Companies. We aim at promoting ICT education in Ghana, establish computer laboratories for deprive schools, implement IT ideologies to develop Ghana, establish computer schools for the deprived communities, and support the needy but brilliant students in Ghana.
-                  Technology has made the world a global village and countries that are well advanced in technology are leading the world in all areas. 
-                  Ghana is a developing country and we believe that through technology it can be a developed one. Due to this fact, we, the ICT Teachers and IT intellectuals in Ghana have come together to put up strategies, programs, projects and innovative ideologies to develop our dear nation, Ghana.
-              </p>
-            </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item active"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#gallery">Events Gallery</a></li>
+                                
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#donate">Donate</a></li>
 
-            <div class="container">
-              <img src="img/d3.jpg" class="img-responsive" style="width:100%">
-            </div>
-            <div id="grey">
-              <h1 style="padding-bottom:40px; padding-top:40px">OUR FOCUS</h1>
-              <p class="text-justify" style="font-size:20px; font-family:Arial; padding-bottom:40px; margin-left:60px; margin-right:60px ">
-                  Our focus is to enrich Ghanaian education to empower students to become innovators and entrepreneurs’, help improve quality health services, implement strategies to supply energy to Ghanaian people to solve the low schedule challenges to create enabling environment for international investors, prevent people from sleeping in darkness in Ghana and eliminate unemployment among companies.
-                  Also our focus will be on mobilizing and training young people; orphans, school dropouts, unskilled young men and women who have no future career in the field of IT and fashion designing to add value to the life of the youth. It is our priority to assist students who are really brilliant but one way or the other needy in education.
-              </p> 
-            </div>
-          </div>
-          <div class="container" >
-            <div class="row">
-             <div class="pull-right col-lg-6"  >
-              <h1 style="padding-bottom:40px; padding-top:40px">COME JOIN US</h1>
-              <p class="text-justify" style="font-size:25px;  padding-bottom:0px; text-align:left width:50% ">
-              
-                We call on IT firms and IT experts around the world to help us complete and implement our innovative ideologies to develop Ghana as a country to rock shoulders with the
-                developed countries. We have vast innovative ideas which could be implemented to move the country forward.</p>
-             </div>
-             <div class=" col-lg-6 "><img src="img/it.jpg" class="img-responsive" style="width:100%"></div>
-             <div class="btn-group">
-              <div class="mbrship">
-                <a href="Membership.html" class="btn btn-lg btn success">BECOME A MEMBER NOW</a>
-              </div>
-             </div>
-            </div>
-          </div>
-      </div>
-        <!-- #################################################################################################################################### -->
-         
-          <div class="row" style="padding-left:30px;">
-          <h1 style="margin-left:10px; text-align:center; padding-top:40px;">OUR SPONSORS</h1>
-            <div class="container">
-              <div id="slider1">
-                <div class="viewport">
-                  <ul class="overview">
-                    <li ><img src="img/sp1.PNG" class="img-responsive " style=" margin-bottom:50px;"></li>
-                    <li ><img src="img/sp2.PNG" class="img-responsive" style=" margin-bottom:50px;"></li>
-                    <li ><img src="img/sp3.PNG" class="img-responsive " style=" margin-bottom:50px;"></li>
-                    <li ><img src="img/sp4.PNG" class="img-responsive " style=" margin-bottom:50px;"></li>
-                    <li ><img src="img/sp5.PNG" class="img-responsive " style=" margin-bottom:50px;"></li>
-                  </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
                 </div>
-              </div>
-            </div>         
-           </div> 
-           </div>
-   </main>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
 
-   <footer>
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                  <h4>Quick links</h4>
-                    <ul>
-                      <li><a href="index.html"><b>Home</b></a></li>
-                      <li><a href="aboutUs.html"><b>About us</b> </a></li>
-                      <li><a href="events.html"><b>Events</b></a></li>
-                      <li><a href="donate.html"><b>Donate</b></a></li>
-                    </ul> 
+        <!--========== SLIDER ==========-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <h4>Headquarters Location:</h4>
-                    <ul style="font-size:12px;">
-                        <li>Head Quarters,</li> 
-                        <li> The Ghana National Association of ICT Teachers </li> 
-                        <li>  Plt 6B, Esereso-Kumasi</li> 
-                        <li>Bosomtwe District –Ghana</li> 
-                        <li> Office line: 0555375514 (Outside Ghana 00233555375514)</li> 
-                    </ul>
-                    <ul class="list-inline icons">
-                    <p>
-                      <li><a href ="www.twitter.com"><i class ="fa fa-twitter fa-3x"></i></a></li>
-                      <li><a href ="www.facebook.com"><i class ="fa fa-facebook-official fa-3x"></i></a></li>
-                      <li><a href ="gmail.com"><i class ="fa fa-google-plus fa-3x"></i></a></li>
-                      <li><a href ="www.youtube.com"><i class ="fa fa-youtube fa-3x"></i></a></li>
-                    </p>
-                    </ul>
-  
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="img/dum.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                
+                                <p class="color-white" >When women and girls are given the resources in ICT to create<br> opportunity for themselves and their communities, everyone benefits.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/dummy8.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                               
+                                <p class="color-white">Awaken your inner sleeping giant and move mountains of global<br> change through Information and Communication Technology.</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12">
-                <h4>Postal Address and Office line</h4>
-                    <ul style="font-size:12px;">
-                      <li>The Ghana National Association of ICT Teachers</li>
-                      <li>P. O. Box AY 426</li>
-                      <li>Asuoyeboa - Kumasi</li>
-                      <li>Ashanti, Ghana</li>
-                      <li>West Africa</li>
-                    </ul>
-                      <p class="footer-company-name" style="margin-top:80px">GNAIT &copy; 2017</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 footer-distributed">
-                <h4 >Contact us</h4>
-                    <form action="#" method="post">
-                        <input type="text" name="email" placeholder="Email" />
-                        <textarea name="message" placeholder="Message"></textarea>
-                        <button>Send</button>
-                    </form>
-            </div>
-          </div>
         </div>
-</footer>
+        <!--========== SLIDER ==========-->
+
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- About -->
+        
+            <div class="content-lg container">
+                <!-- Masonry Grid -->
+                <div class="masonry-grid row">
+                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
+                        <div class="margin-b-60">
+                            <h2>WHO WE ARE</h2>
+                            <p> We aim at promoting ICT education in Ghana, establish computer laboratories for deprive schools, implement IT ideologies to develop Ghana, establish computer schools for the deprived communities, and support the needy but brilliant students in Ghana.
+                  </p>
+                        </div>
+                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/kids.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
+                    </div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                        <div class="margin-b-60">
+                            <img class="full-width img-responsive wow fadeInUp" src="img/500X500/kid.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+                        </div>
+                        <h2>OUR FOCUS</h2>
+                        <p>Our focus is to enrich Ghanaian education to empower students to become innovators and entrepreneurs, that is
+                  mobilizing and training young people; orphans, school dropouts, unskilled young men and women who have no future career in the field of IT and fashion designing to add value to the life of the youth. It is our priority to assist students who are really brilliant but one way or the other needy in education.</p>
+                    </div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
+                        <div class="margin-t-60 margin-b-60">
+                            <h2>SUPPORT US</h2>
+                            <p> We call on IT firms and IT experts around the world to help us complete and implement our innovative ideologies to develop Ghana as a country to rock shoulders with the
+                developed countries. We have vast innovative ideas which could be implemented to move the country forward.</p>
+                        </div>
+                        <img class="full-width img-responsive wow fadeInUp" src="img/500x500/it.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
+                    </div>
+                </div>
+                <!-- End Masonry Grid -->
+            </div>
+         <div id="about">   
+             <div class="bg-color-sky-light">
+                <div class="content-lg container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 md-margin-b-60">
+                            <div class="margin-t-50 margin-b-30">
+                                <h2>ABOUT US</h2>
+                                <p> Ghana National Association of ICT Teachers is an association uniting ICT instructors from both public and private
+                       schools  and I.T professionals in Ghana in the cause of promoting ICT education. GNAIT help to train young men and
+                       women in the field of IT offer teaching and learning materials and establish IT centers for educational purposes
+                       intiated in 2016 by teachers from united Kingdom ,Germany, Denmark and ICT and IT professionals from Ghana.
+                       <br>
+                       <br>
+                       GNAIT has quickly dominated the entire nation and we have members in all the ten regions of Ghana.
+                        We aim at supporting deprive schools by establishing computer laboratories for them, organising workshops for students and  ICT teachers and organising ICT quizzes for students nationwide.
+                       
+          </p>
+                            </div>
+                            <a href="#" class="btn-theme btn-theme-sm btn-white-bg text-uppercase">Explore</a>
+                        </div>
+                        <div class="col-md-5 col-sm-7 col-md-offset-2">
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a class="panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    OUR MISSION
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                Our mission is to mobilise all ICT teachers, IT professionals and Academicians in Ghana to link up with the same caliber of people internationally to help us come out and implement our IT ideologies to develop our dear nation, Ghana.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    OUR VISION
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                               Our vision it to transform Ghanaian traditional methodologies where chalk and chalkboards are use in teaching and learning into digital learning where projectors and smartboards are used to improve the academic standard in Ghanaian education..
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed panel-title-child" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  OUR PASSION
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                We are passionate to train unskilled people to acquire future career in I.T and support I.T professionals in diverse ways; establish businesses, expand businesses, guide and promote their goods and services.
+                        It is our priority to seek welfare of I.T professionals, ICT teachers and students in Ghana.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Accodrion -->
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        
+        <!-- End About -->
+
+        <!-- Latest Products -->
+        <div id="products">
+            <div class="content-lg container">
+                <div class="row margin-b-40">
+                    <div class="col-sm-6">
+                        <h2>MORE ABOUT US</h2>
+                        <p>
+                        
+                        </p>
+                    </div>
+                </div>
+                <!--// end row -->
+
+                <div class="row">
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive" src="img/970x647/09.jpg" alt="Latest Products Image">
+                        </div>
+                        <h4><a href="#">OUR AIMS</a> </h4>
+                        <p> To promote academic performance of students in Ghana through I.T.<br>
+          To transform traditional methodologies into digital teaching and learning (using
+              electronic whiteboards in classrooms).<br>
+          G.N.A.I.T will put up strategies that will support and compel GES, Ministry of
+              Education and other relevant bodies to make ICT subject examinable at the second
+              cycle institutions in Ghana.<br></p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive" src="img/970x647/07.jpg" alt="Latest Products Image">
+                        </div>
+                        <h4><a href="#">OUR GOALS</a></h4>
+                        <p> 
+          Every pupil / student shall acquire computer skills by 2030.<br>
+          40% of Ghanaian schools shall have access to electronic whiteboards and projectors
+             installed in classrooms by 2030.<br>
+             By 2030 Ghana Education shall transform from chalk and chalkboard teaching to
+              digital teaching and learning<br></p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                    <!-- End Latest Products -->
+
+                    <!-- Latest Products -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <img class="img-responsive" src="img/970x647/08.jpg" alt="Latest Products Image">
+                        </div>
+                        <h4><a href="#">OUR OBJECTIVES</a></h4>
+                        <p>To offer schools in Ghana ICT textbooks to enhance teaching and learning of ICT
+subject in both basic and high schools.<br>
+To offer schools in Ghana IT equipment such as computers, printers, webcams,
+projectors, modems, pen drives, scanners, photocopiers, etc. to facilitate teaching and
+learning.<br>
+  To offer and install electronic (interactive) boards in schools (deprived) for
+effective teaching and learning.<br></p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                    <!-- End Latest Products -->
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        </div>
+        <!-- End Latest Products -->
+        <section class="gallery push-right" id="gallery">
+        <div class="container">
+            <div class="heading text-center">
+                <img class="dividerline" src="img/sep.png" alt="">
+                <h2>EVENTS GALLERY</h2>
+                <img class="dividerline" src="img/sep.png" alt="">
+            </div>
+            
+            <div id="grid-gallery" class="grid-gallery">
+
+                    <section class="grid-wrap">
+                        <ul class="grid">
+                            <li class="grid-sizer"></li><!-- for Masonry column width -->               
+                            <li>
+                                <figure>
+                                    <img src="img/events/event1.jpg" alt=""/>
+                                    <figcaption><h3>Central Regional Registration of Members</h3>
+                                                <p>This event is to register new members </p>
+                                                    Date: 3rd July,2017<br>
+                                                    Time: 11:00AM<br>
+                                                    Venue:Kumasi,Ghana
+                                                </p></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/events/event2.png" alt=""/>
+                                    <figcaption><h3>Free Computer Network Praticals<br><br></h3>
+                                                <p>This event is to offer free computer network practicals</p>
+              
+                                                Date: 6th June,2017<br>
+                                                Time: 9:00AM<br>
+                                                Venue:Kumasi,Ghana<br>
+                                                </p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/events/fb18.jpg" alt=""/>
+                                    <figcaption><h3>Regional Executives meeting<br><br></h3>
+                                                <p>This event is to discuss general matter concerning GNAIT</p>
+              
+                                                Date: 4th June,2017<br>
+                                                Time: 2:00PM<br>
+                                                Venue:Kumasi,Ghana<br>
+                                                </p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            
+                           
+                            <li>
+                                <figure>
+                                    <img src="img/events/kids2.jpg" alt=""/>
+                                    <figcaption><h3>Free Computer Training<br><br></h3>
+                                                    <p>This event is to offer free computer Training to volunteers</p>
+                                                    Date: 10th May,2017<br>
+                                                    Time: 11:00AM<br>
+                                                    Venue:Kumasi,Ghana<br>
+                                                    </p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/events/event5.png" alt=""/>
+                                    <figcaption><h3>GNAIT National Meeting<br><br></h3>
+                                                <p>This event is to assemble members for meetings</p>
+                                                    Date: 10th May,2017<br>
+                                                    Time: 9:00AM<br>
+                                                    Venue:Obuasi Central,Ghana<br>
+                                                </p>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/events/event4.png" alt=""/>
+                                    <figcaption><h3>Ashanti regional i.c.t quiz zone one<br><br></h4>
+                                                    <p>quiz for shs students</p>
+                                                        Date: 25th February,2017<br>
+                                                        Time: 9:00AM<br>
+                                                        Venue:Kumasi,Ghana
+                                                    </p>
+                                    </figcaption>
+                            </figure>
+                            </li>
+                             
+                        </ul>
+                    </section><!-- // end small images -->
+                    
+                   
+                       
+                       
+                   
+                    
+                </div><!-- // grid-gallery -->
+            </div>
+    </section>
+    <section class="contact" id="contact">
+    <div class="container">
+        <div class="heading">
+                <img class="dividerline" src="img/sep.png" alt="">
+                <h2 style="text-align:center">CONTACT US</h2>
+                <img class="dividerline" src="img/sep.png" alt="">
+                <h3>We'd love to hear from you</h3>
+        </div>
+    </div>
+     <div class="container w960">
+      <div class="row">
+        <div class="done">
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                Your message has been sent. Thank you!
+            </div>
+        </div>
+       <form method="post" action="contact.php" id="contactform">
+          <input name="name" type="text" class="contact col-md-6" placeholder="Your Name *" >
+          <input name="email" type="email" class="contact noMarr col-md-6" placeholder="E-mail address *" >
+          <textarea name="comment" class="contact col-md-12" placeholder="Message *"></textarea>
+          <input type="submit" id="submit" class="contact submit" value="Send message">
+        </form>
+      </div>
+    </div>
+    </section>
+    <footer class="footer">
+  <div class="footer-top section">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-6">
+         <h5>Headquarters Location</h5>
+           
+                Head Quarters,<br>
+                 The Ghana National Association of ICT Teachers <br> 
+                  Plt 6B, Esereso-Kumasi<br> 
+                Bosomtwe District –Ghana<br> 
+                 Office line: 0555375514 (Outside Ghana 00233555375514)<br> 
+            
+        </div>
+        <div class="footer-col col-md-3">
+          <h5>Postal Address and Office line</h5>
+        <p>
+              The Ghana National Association of ICT Teachers<br>
+              P. O. Box AY 426<br>
+             Asuoyeboa - Kumasi<br>
+              Ashanti, Ghana<br>
+              West Africa<br>
+              
+          </p>
+        </div>
+        <div class="footer-col col-md-3">
+          <h5>Connect with us</h5>
+          <ul class="footer-share">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
     
+            
+           
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
-     
-    
-       <script src="js/jquery-1.11.3.min.js"></script>
-       <script src="js/bootstrap.min.js"></script>
-       <script src="js/jquery.tinycarousel.min.js"></script>
-        <script> $('.carousel').carousel()</script>
-        <script>
-  $(document).ready(function() {
-    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
-  });
+        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- CORE PLUGINS -->
+        <script src="vendor/jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
-  $(window).resize(function() {
-    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
-  });
-</script>
-  
-       
-<script type="text/javascript">
-$(document).ready(function(){
-$('#slider1').tinycarousel({
-start: 1, // where should the <a href="#">carousel</a> start?
-display: 1, // how many blocks do you want to move at a time?
-axis: 'x', // vertical or horizontal scroller? 'x' or 'y' .
-controls: true, // show left and right navigation buttons?
-pager: false, // is there a page number navigation present?
-interval: true, // move to the next block on interval.
-intervaltime: 3000, // interval time in milliseconds.
-animation: true, // false is instant, true is animate.
-duration: 1000, // how fast must the animation move in milliseconds?
-callback: null, // function that executes after every move
-});
-});
+        <!-- PAGE LEVEL PLUGINS -->
+        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
 
-</script>
-      
-      
-</body>
+        <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        <script src="js/components/google-map.min.js" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
 </html>
